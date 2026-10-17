@@ -26,6 +26,33 @@ main {
   height: 100%;
 }
 
+.btn_restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 600;
+  color: #f5f7ff;
+  background: transparent;
+  padding-inline: 16px;
+  padding-block: 10px;
+  border: 1px solid #f5f7ff;
+  border-radius: 6px;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    background: #f5f7ff;
+    color: #0d0f14;
+  }
+
+  &:active {
+    transform: scale(0.95) translateY(4px);
+  }
+}
+
 .game-over {
   font-weight: 700;
   color: #f74444;
