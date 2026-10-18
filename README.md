@@ -1,6 +1,18 @@
 # 🚀 Galaxian
 
-A browser arcade shooter inspired by the classic *Galaxian*, written in vanilla JavaScript (ES modules, no frameworks). Move your warrior ship, shoot down the entire enemy fleet before it reaches the bottom of the board, and enjoy an animated space background with stars and meteors.
+A browser arcade shooter inspired by the classic _Galaxian_, written in vanilla JavaScript (ES modules, no frameworks). Move your warrior ship, shoot down the entire enemy fleet before it reaches the bottom of the board, and enjoy an animated space background with stars and meteors.
+
+<p align="center">
+  <img src="./public/Win.gif" alt="Демо проекта" width="700">
+  <br>
+  <em>Win Game Demo</em>
+</p>
+
+<p align="center">
+  <img src="./public/Lose.gif" alt="Демо проекта" width="700">
+  <br>
+  <em>Lose Game Demo</em>
+</p>
 
 ## Features
 
@@ -14,11 +26,11 @@ A browser arcade shooter inspired by the classic *Galaxian*, written in vanilla 
 
 ## Controls
 
-| Action      | Keys                  |
-| ----------- | --------------------- |
-| Move left   | `←` or `A`            |
-| Move right  | `→` or `D`            |
-| Shoot       | `Space` or `Enter`    |
+| Action     | Keys               |
+| ---------- | ------------------ |
+| Move left  | `←` or `A`         |
+| Move right | `→` or `D`         |
+| Shoot      | `Space` or `Enter` |
 
 Holding the fire key keeps shooting, limited by the warrior's cooldown.
 
@@ -49,15 +61,15 @@ Then open the printed address (e.g. `http://localhost:3000`) in your browser.
 
 You can tweak the gameplay by changing a few constants and constructor arguments:
 
-| Option                                  | Description                                     |
-| --------------------------------------- | ----------------------------------------------- |
-| `SIZE`                                  | Size of the warrior and enemies                 |
-| `ENEMIES_COL_COUNT`, `ENEMIES_ROW_COUNT`| Number of enemy columns and rows                |
-| `GAP`                                   | Gap between enemies                             |
-| `hardLvl`                               | Enemy movement speed (difficulty)               |
-| `rate`                                  | Game loop interval in milliseconds              |
-| `new Warrior(step, cooldown)`           | Ship speed per frame and delay between shots    |
-| `COUNT_STAR`                            | Number of stars generated in the background     |
+| Option                                   | Description                                  |
+| ---------------------------------------- | -------------------------------------------- |
+| `SIZE`                                   | Size of the warrior and enemies              |
+| `ENEMIES_COL_COUNT`, `ENEMIES_ROW_COUNT` | Number of enemy columns and rows             |
+| `GAP`                                    | Gap between enemies                          |
+| `hardLvl`                                | Enemy movement speed (difficulty)            |
+| `rate`                                   | Game loop interval in milliseconds           |
+| `new Warrior(step, cooldown)`            | Ship speed per frame and delay between shots |
+| `COUNT_STAR`                             | Number of stars generated in the background  |
 
 Bullets can also be customized via `warrior.shoot({ speed, width, height, color })`.
 
@@ -67,7 +79,8 @@ Bullets can also be customized via `warrior.shoot({ speed, width, height, color 
 - CSS3 (animations for stars and meteors)
 - JavaScript (ES2022): modules, classes, private fields, `requestAnimationFrame`
 - Inline SVG for the warrior ship
-- 
+-
+
 ## Author
 
 **Shatilov D. M.**: [@Scorabey](https://github.com/Scorabey)
